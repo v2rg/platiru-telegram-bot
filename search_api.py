@@ -83,13 +83,13 @@ class SearchAPI:
 
         if results[0] == 'best_result':  # если остался только один элемент
             best_result = (
-                f'<b>Лучший результат:</b>'
-                f'\n<b>Название:</b> {results[0][0]}'
-                f'\n<b>Цена: {results[0][2]}</b> ₽'
-                f'\n<b>Продавец:</b> {results[0][3]}'
-                f'\n<b>Рейтинг: {results[0][4]}</b>'
-                f'\n<b>Продано: {results[0][5]}</b>'
-                f'\n<b>Ссылка:</b> {results[0][1]}'
+                f'<b>Лучший результат:</b>\n'
+                f'\n<b>Название:</b> {results[1][0]}'
+                f'\n<b>Цена: {results[1][2]}</b> ₽'
+                f'\n<b>Продавец:</b> {results[1][3]}'
+                f'\n<b>Рейтинг: {results[1][4]}</b>'
+                f'\n<b>Продано: {results[1][5]}</b>'
+                f'\n<b>Ссылка:</b> {results[1][1]}'
             )
             results_f_string.append(best_result)
 
@@ -206,7 +206,7 @@ class SearchAPI:
                 best_result = list(set(tuple(x[1]) for x in sorted_result))  # список неповторяющихся элементов
 
                 if len(best_result) == 1:  # если set вернул только один элемент
-                    best_result = ('best_result', best_result)
+                    best_result = ('best_result', *best_result)
                     best_result_f_string = self.__f_string_result(best_result)
                     best_result_f_string.append(str(self.__result_count))
 

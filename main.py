@@ -1,4 +1,6 @@
 import os
+import time
+from datetime import datetime
 
 import telebot
 from dotenv import load_dotenv
@@ -21,6 +23,7 @@ start_message = (f'<b>Поиск на</b> Plati.ru'
 
 @bot.message_handler(commands=['start'])
 def start_command(message):
+    time.sleep(1)
     bot.send_message(message.chat.id, start_message, parse_mode='HTML')
 
 
