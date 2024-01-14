@@ -9,11 +9,11 @@
     - либо выводит только один вариант, когда все элементы совпадают
 
 ## Особенности
-- Получает данные через API plati [search_api.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/search_api.py)
-    - или через парсинг с bs4 [search_bs4.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/search_bs4.py) `работает нестабильно`
+- Получает данные через API plati ([search_api.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/search_api.py))
+    - или через парсинг с bs4 ([search_bs4.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/search_bs4.py)) `работает нестабильно`
 - Поиск выполняется с помощью разбиения запроса на подстроки
     - результат поиска не всегда идеальный, из-за особенности именования товаров на plati
-- Для сортировки применяются алгоритмы [algo.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/algo.py):
+- Для сортировки ([algo.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/algo.py)) применяются алгоритмы:
     - bubble
     - selection
     - quick
