@@ -13,7 +13,7 @@
     - или через парсинг с bs4 [search_bs4.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/search_bs4.py) `работает нестабильно`
 - Поиск выполняется с помощью разбиения запроса на подстроки
     - результат поиска не всегда идеальный, из-за особенности именования товаров на plati
-- Для сортировки применяются алгоритмы:
+- Для сортировки применяются алгоритмы [algo.py](https://github.com/v2rg/platiru-telegram-bot/blob/main/algo.py):
     - bubble
     - selection
     - quick
