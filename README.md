@@ -27,6 +27,6 @@
 ## Требования
 - Python 3.11
 - pyTelegramBotAPI
-﻿- python-dotenv
+- python-dotenv
 - requests
 - beautifulsoup4
