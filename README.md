@@ -1,4 +1,4 @@
-# Телеграм-бот [PlatiRu Bot](https://t.me/xPlatiRuBot)
+# Телеграм-бот [PlatiRu Bot](https://t.me/xPlatiRuBot) | [DockerHub](https://hub.docker.com/r/v2rg/plati-ru-bot)
 - Бот осуществляет поиск по сайту plati.ru (plati.market)
 - Выводит три варианта из найденного:
     - с минимальной ценой
